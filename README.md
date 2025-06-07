@@ -22,8 +22,8 @@ Criar um sistema completo e modular que:
 ## 🗂️ Estrutura do repositório
 
 semana_01_fundamentos/
-├── 01_setup_ambiente/ # API básica Flask + GPT + histórico local
-├── 02_langchain_basico/ # [em breve]
+├── 01_setup_ambiente/         # API Flask básica + GPT + histórico local
+├── 02_langchain_basico/       # [em breve]
 
 
 ---
