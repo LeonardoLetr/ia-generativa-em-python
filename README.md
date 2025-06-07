@@ -24,9 +24,7 @@ Criar um sistema completo e modular que:
 1. Ative seu ambiente virtual (`venv`)
 2. Instale as dependências:
 
-```bash
 pip install -r requirements.txt
-
 
 ---
 
