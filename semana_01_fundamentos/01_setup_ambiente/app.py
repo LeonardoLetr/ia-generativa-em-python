@@ -1,6 +1,7 @@
 from openai import OpenAI
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
+from storage import salvar_interacao  
 import os
 
 load_dotenv()
@@ -24,6 +25,8 @@ def gpt():
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}]
         )
+
+        salvar_interacao(prompt, response.choices[0].message.content)
         return jsonify({"response": response.choices[0].message.content})
     except Exception as e:
         return jsonify({"error": str(e)}), 500

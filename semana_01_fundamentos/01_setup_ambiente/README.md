@@ -1,4 +1,4 @@
-# 🧪 Dia 1 – Setup e Hello World com Flask + OpenAI
+# 🧪 Tarefa 1 – Setup e Hello World com Flask + OpenAI
 
 ## 🎯 Objetivo
 - Configurar o ambiente Python com `venv`
@@ -15,3 +15,21 @@
    ```bash
    python -m venv venv
    source venv/bin/activate  # ou venv\Scripts\activate no Windows
+
+
+## ✅ Tarefa 2 – Registro de histórico de interações
+
+Toda chamada à rota `/gpt` agora também grava automaticamente:
+- O prompt enviado
+- A resposta retornada
+- A data/hora da interação
+
+Esses dados são salvos em `historico.json`, no formato JSON.
+
+Exemplo:
+```json
+{
+  "data": "2025-06-07T18:22:34",
+  "prompt": "Explique o que é LangChain",
+  "resposta": "LangChain é uma biblioteca Python..."
+}
