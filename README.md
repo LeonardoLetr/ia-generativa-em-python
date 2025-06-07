@@ -19,6 +19,17 @@ Criar um sistema completo e modular que:
 
 ---
 
+## ▶️ Como executar
+
+1. Ative seu ambiente virtual (`venv`)
+2. Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+
+
+---
+
 ## 🗂️ Estrutura do repositório
 
 semana_01_fundamentos/
